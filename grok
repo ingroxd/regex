@@ -1,0 +1,3 @@
+NESSUS
+scan.csv (1 entry) "%{DATA:plugin_id}","%{DATA:cve}","%{DATA:cvss}","%{DATA:risk}","%{DATA:ip}","%{DATA:protocol}","%{DATA:port}","%{DATA:name}","%{DATA:synopsis}",%{QS:description},%{QS:solution},%{QS:see_also},%{QS:plugin_output}
+N.B. If you are going to use this grok on Logstash, consider to use multiline to break the .csv instead of using the codec csv.
