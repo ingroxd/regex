@@ -7,5 +7,5 @@ https://regex101.com/
 using the sintax PCRE (PHP) which is fully compatible with grep sintax, escaping apart.
 
 You can quickly achieve grep escaping with the following command:
-sed -e 's/[(){}|?+]/\\&/g' -e 's|\/|/|g' list
+sed -e 's/[(){}|?+]/\\\\&/g' -e 's|\/|/|g' list
 
